@@ -1,0 +1,22 @@
+<app-mini-loader></app-mini-loader>
+<ul class="demo-list-icon mdl-list" *ngIf="taskList.length > 0">    
+    <li class="mdl-list__item" *ngFor="let task of taskList | filter: 'Task': keyword">
+        <span class="mdl-list__item-primary-content" *ngIf="!task.Done; else notDoneTemplate">
+        <i class="material-icons mdl-list__item-icon">assignment</i>
+        {{task.Task}}                                 
+      </span>
+
+        <ng-template #notDoneTemplate>
+            <span class="mdl-list__item-primary-content">
+          <i class="material-icons mdl-list__item-icon">assignment</i>
+          <s>{{task.Task}}</s>
+          </span>
+        </ng-template>
+
+        <div>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" [for]="'checkbox-' + task.Id">
+              <input type="checkbox" [id]="'checkbox-' + task.Id" class="mdl-checkbox__input" [checked]="task.Done" (change)="task.Done = !task.Done;" />                              
+          </label>
+        </div>
+    </li>
+</ul>

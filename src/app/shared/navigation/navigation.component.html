@@ -1,0 +1,15 @@
+<!-- Navigation -->
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title">My Todo App</span>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="mdl-navigation mdl-layout--large-screen-only">
+      <a class="mdl-navigation__link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a class="mdl-navigation__link" routerLink="page1" routerLinkActive="active">Page 1</a>
+      <a class="mdl-navigation__link" routerLink="page2" routerLinkActive="active">Page 2</a>       
+    </nav>
+  </div>
+</header>

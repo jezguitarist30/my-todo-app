@@ -1,0 +1,14 @@
+
+.mdl-card__title {
+    background-color: #FF4081;
+    color: #fff;
+}
+
+.mdl-card__title-text {
+    color: #fff;
+}
+
+.search-icon-field {
+    padding: 0;
+    position: initial;
+}

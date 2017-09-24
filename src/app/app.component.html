@@ -1,0 +1,17 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <app-navigation></app-navigation>
+
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="position: absolute;right: 20px;bottom: 75px; z-index: 1;"
+    data-upgraded=",MaterialButton,MaterialRipple">
+      <i class="material-icons">add</i>
+      <span class="mdl-button__ripple-container">
+        <span class="mdl-ripple"></span>
+      </span>
+  </button>
+  <app-footer></app-footer>
+</div>
